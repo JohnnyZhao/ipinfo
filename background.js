@@ -3,10 +3,10 @@ chrome.contextMenus.create({
     'title':'查询IP信息',
     'contexts':['selection'],
     'id':'cn',
-    'onclick':translate
+    'onclick':lookForIP
 });
 
-function translate(info, tab){
+function lookForIP(info, tab){
     chrome.runtime.sendMessage({greeting: "hello", data: info.selectionText});
 }
 
