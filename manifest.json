@@ -1,0 +1,36 @@
+{
+    "name": "IP助手",
+    "version": "0.1",
+    "manifest_version": 2,
+    "description": "review",
+    "background": {
+        "scripts": [
+            "jquery-1.7.2.js",
+            "background.js",
+            "popup.js"
+        ]
+    },
+    "content_scripts": [
+        {
+            "matches": ["http://local:8000/*", "http://njdebug.shanbay.com/*", "http://www.shanbay.com/*"],
+            "js": ["jquery-1.7.2.js", "background.js", "content.js", "popup.js"]
+        }
+    ],
+    "browser_action":{
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "http://dj.iciba.com/",
+        "http://www.iciba.com/",
+        "http://www.shanbay.com/",
+        "http://njdebug.shanbay.com/",
+        "http://ipinfo.io/",
+        "http://local:8000/",
+        "contextMenus",
+        "tabs"
+    ],
+    "icons":{
+        "16": "icon.png"
+    }
+}

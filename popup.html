@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+    <style>
+      body {
+        min-width:357px;
+        overflow-x:hidden;
+        font-family: sans-serif;
+      }
+      tr{
+        margin-bottom: 10px;
+      }
+      .label-td{
+          color: #ccc;
+          font-size: 14px;
+      }
+
+      ul{
+        list-style: none;
+        padding-left: 0;
+      }
+      li{
+        color: #CC0099;
+        margin: 10px;
+      }
+      li p{
+        margin: 0px;
+      }
+      #query-word{
+        color: #cc0099;
+        font-size: 30px;
+      }
+    </style>
+
+    <!-- JavaScript and HTML must be in separate files for security. -->
+  </head>
+  <body>
+    <div id="shanbay-extension-input">
+        <input id="shanbay-extension-query-ip" type="text" name="word" placeholder="Enter an IP" style="width: 150px; height: 20px; font-size: 16px; margin-top: 5px;"/>
+        <button id="shanbay-extension-query-ip-btn" style="padding: 6px; cursor: pointer">Get Info</button>
+    </div>
+    <div class="title">
+    </div>
+    <div>
+        <ul class="content">
+        </ul>
+    </div>
+    <div class="galery">
+    </div>
+    <script src="jquery-1.7.2.js"></script>
+    <script src="popup.js"></script>
+    <script src="content.js"></script>
+  </body>
+</html>
