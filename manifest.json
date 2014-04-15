@@ -12,7 +12,7 @@
     },
     "content_scripts": [
         {
-            "matches": ["http://local:8000/*", "http://njdebug.shanbay.com/*", "http://www.shanbay.com/*"],
+            "matches": ["*://*/*"],
             "js": ["jquery-1.7.2.js", "background.js", "content.js", "popup.js"]
         }
     ],
