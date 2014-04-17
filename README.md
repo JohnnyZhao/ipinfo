@@ -1,14 +1,22 @@
-Install IP Helper extension for chrome browser:
+This is a chrome extension used to fetch ip information from http://ipinfo.io
 
-1. download crx file: [download link](http://git.shanbay.com/chrome-extentions/ip/blob/master/ip_helper.crx)
+
+Installation:
+
+1. download crx file from this repository
 
 2. open chrome extension page, drag and drop the crx file you just downloaded to extension page
 
-Congrats
+Congrats~
 
 
-features:
+Features:
 
 1. select an IP address from any webpage and right click, you will find an option for this IP information
 
 2. click extension icon from chrome tool bar, enter the IP you want to look up and press Enter
+
+
+Features to come:
+
+1. support domain name search
